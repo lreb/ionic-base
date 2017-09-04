@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { SignInPage } from '../sign-in/sign-in'
 /**
  * Generated class for the SignUpPage page.
  *
@@ -14,12 +14,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'sign-up.html',
 })
 export class SignUpPage {
-
+  responseData : any;
+  userData = {"username": "","password": "", "name": "","email": ""};
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignUpPage');
   }
-
+  signin(){
+  	this.navCtrl.push(SignInPage)
+  }
 }

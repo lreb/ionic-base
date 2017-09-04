@@ -14,5 +14,28 @@
 
 
 <ion-content padding>
+	<ion-row>
+		<img src="assets/img/ionic-logo-demo.png" class="logo img-center"/>	
+	</ion-row>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1>Welcome to Your App</h1>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
+  <ion-grid >
+    <ion-row>
+      <ion-col center text-center>
+        <button ion-button full color="success" (click)="signup()">Sign up</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col center text-center>
+        <button ion-button full color="lightText" (click)="signin()">Sign in</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
